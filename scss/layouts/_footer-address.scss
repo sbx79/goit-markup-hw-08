@@ -1,0 +1,55 @@
+@use "../utils/variables";
+
+.footer-address-container {
+    margin-left: 15px;
+    width: 231px;
+}
+
+.footer-address {
+    display: flex;
+    font-style: normal;
+    color: variables.$white-text-color;
+    
+    &:hover, &:focus {
+    color: variables.$accent-color;
+    }
+
+}
+
+.footer-address__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    color: variables.$white-text-color;
+    letter-spacing: 0.03em;
+    width: 231px;
+}
+
+.footer-address__contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    color: variables.$footer-contact-color;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer-address-container {
+        margin-left: 76px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-address-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .footer-address-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

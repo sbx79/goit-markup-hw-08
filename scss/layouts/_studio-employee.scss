@@ -1,0 +1,32 @@
+@use "../utils/variables";
+.section-description {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: variables.$main-text-color;
+}
+
+.our-team-item-description {
+    padding: 30px 0px;
+}
+
+.our-team__employee-name {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employee-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: variables.$main-title-color;
+    margin-bottom: 16px;
+}

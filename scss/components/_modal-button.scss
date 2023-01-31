@@ -1,0 +1,14 @@
+@use "../utils/variables";
+.modal-window__close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color variables.$timer variables.$timing-function;
+
+    &:hover, &:focus {
+    background-color: variables.$accent-color;
+}
+}

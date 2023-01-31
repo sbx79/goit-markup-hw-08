@@ -1,0 +1,56 @@
+@use "../utils/variables";
+.header__contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header__contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(14/16);
+    letter-spacing: 0.02em;
+    color: variables.$secondary-text-color;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+
+&:hover,
+&:focus {
+    font-size: 14px;
+    line-height: calc(14/16);
+    letter-spacing: 0.02em;
+    color: variables.$accent-color;
+    fill: variables.$accent-color;
+}
+
+
+}
+
+.header__contacts-svg {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+@media (max-width: 767px) {
+    .header__contacts-list {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header__contacts-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 93px;
+        ;
+    }
+
+    .header__contacts-link {
+        padding: 10px 0;
+    }
+
+}

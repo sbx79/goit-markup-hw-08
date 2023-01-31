@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>WebStudio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header__topline">
+        <a href="./index.html" class="header__logo"> WebStudio</a>
+        <nav>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link ">
+                Studio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link navigation__current-page"> Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"> Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item">
+            <a href="mailto:info@example.com" class="header__contacts-link">
+              <svg width="16" height="12" class="header__contacts-svg">
+                <use href="./images/svg/icons.svg#icon-envelope"></use>
+              </svg>
+              info@example.com</a
+            >
+          </li>
+          <li class="header__contacts-item">
+            <a href="tel:12127724150" class="header__contacts-link">
+              <svg width="10" height="16" class="header__contacts-svg">
+                <use href="./images/svg/icons.svg#icon-smartphone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="portfolio__button-list">
+            <li class="portfolio__button-item">
+              <button type="button" class="portfolio__work-button">All</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button type="button" class="portfolio__work-button">
+                Web-sites
+              </button>
+            </li>
+            <li class="portfolio__button-item">
+              <button type="button" class="portfolio__work-button">Apps</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button type="button" class="portfolio__work-button">Design</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button type="button" class="portfolio__work-button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio-image__list">
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-technoduck.jpg"
+                  alt="picture of three people"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Technoduck</h3>
+                <p class="portfolio-image__project-type">Web-site</p>
+              </div>
+            </li>
+
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-basketball.jpg"
+                  alt="two basketball players"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Poster New Orlean vs Golden Star</h3>
+                <p class="portfolio-image__project-type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-seafood-restaurant.jpg"
+                  alt="the seafood restaurant logo"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Seafood Restaurant</h3>
+                <p class="portfolio-image__project-type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-project-prime.jpg"
+                  alt="headphones"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Project Prime</h3>
+                <p class="portfolio-image__project-type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-project-boxes.jpg"
+                  alt="two boxes"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Project Boxes</h3>
+                <p class="portfolio-image__project-type">Apps</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-inspiration.jpg"
+                  alt="computer monitor with inspiration message"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Inspiration has no Borders</h3>
+                <p class="portfolio-image__project-type">Web-site</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-limited-edition.jpg"
+                  alt="limited edition book"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Limited Edition</h3>
+                <p class="portfolio-image__project-type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-project-lab.jpg"
+                  alt="picture of a lable"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Project LAB</h3>
+                <p class="portfolio-image__project-type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-image__item">
+              <div class="box">
+                <img
+                  src="./images/portfolio/portfolio-growing-business.jpg"
+                  alt="laptop with growing business website"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio-image__card-contact">
+                <h3 class="portfolio-image__project-title">Growing Business</h3>
+                <p class="portfolio-image__project-type">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__section">
+        <div>
+          <address class="footer-address">
+            <ul>
+              <li>
+                <a href="./index.html" class="footer-address__logo">WebStudio</a>
+              </li>
+              <li>
+                <a
+                  href="https://goo.gl/maps/NLrpYrAV4WH75ekC6"
+                  class="footer-address__link"
+                  target="_blank"
+                >
+                  695 Park Ave, New York, NY 10065, <br />United States
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="footer-address__contact"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+1212-772-4150" class="footer-address__contact"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="find-us-container">
+          <p class="find-us__title">Find us on</p>
+
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="#" target="_blank" class="footer-social-media__link">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="social-media__icon"
+                >
+                  <use href="./images/svg/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" target="_blank" class="footer-social-media__link">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="social-media__icon"
+                >
+                  <use href="./images/svg/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" target="_blank" class="footer-social-media__link">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="social-media__icon"
+                >
+                  <use href="./images/svg/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" target="_blank" class="footer-social-media__link">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="social-media__icon"
+                >
+                  <use href="./images/svg/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="newsletter">
+          <h3 class="newsletter__title">SUBSCRIBE TO THE NEWSLETTER</h3>
+          <form action="#" class="newsletter__form">
+            <label class="newsletter__lable">
+              <input required
+                class="newsletter__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="newsletter__button" type="submit">
+              Subscribe
+              <svg class="newsletter__send-icon" width="24px" height="24px">
+                <use href="./images/svg/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

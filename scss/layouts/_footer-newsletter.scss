@@ -1,0 +1,116 @@
+@use "../utils/variables";
+@use "../components/button";
+.newsletter {
+    margin-left: 93px;
+}
+
+.newsletter__title {
+    font-size: 14px;
+    line-height: calc(16/14);
+    color:variables.$white-text-color;
+    margin-bottom: 20px;
+
+}
+
+.newsletter__container {
+    margin-left: 93px;
+}
+
+.newsletter__form {
+    display: flex;
+}
+
+.newsletter__lable {
+    margin-right: 12px;
+}
+
+.newsletter__input {
+    padding: 15px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+
+
+&:hover,
+&:focus {
+    color: variables.$white-text-color;
+    background-color: transparent;
+    border-color: variables.$white-text-color;
+}
+}
+.newsletter__button {
+    @include button.button;
+
+&__button:hover,
+&__button:focus {
+    background-color: variables.$button-hover-color;
+}
+
+.newsletter__send-icon {
+    margin-left: 30px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .newsletter {
+        margin: 0 auto;
+    }
+
+    .newsletter__title {
+        text-align: center;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__lable {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .newsletter {
+        margin: 0 auto;
+    }
+
+    .newsletter__title {
+        text-align: center;
+    }
+
+    .newsletter__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter__lable {
+        margin-bottom: 20px;
+    }
+
+    .newsletter__input {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .newsletter {
+        margin: 0 auto;
+    }
+
+    .newsletter__title {
+        text-align: center;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__lable {
+        margin-bottom: 20px;
+    }
+}

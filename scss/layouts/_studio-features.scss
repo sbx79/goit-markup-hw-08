@@ -1,0 +1,122 @@
+@use "../utils/variables";
+.features__title--hide {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+ }
+    
+    .features__image {
+        height: 120px;
+        width: 270px;
+        background-color: rgba(245, 244, 250, 1);
+        padding: 25px 100px;
+        align-items: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    .features__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        text-transform: uppercase;
+        color: variables.$main-text-color;
+        margin-bottom: 10px;
+
+    }
+
+    .features__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        color: variables.$main-title-color;
+    }
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .features__item {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .features__image {
+
+        padding: 25px calc(100%/2 - 70px);
+        width: 100%;
+    }
+
+    .features__title {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .features__item {
+        width: 450px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .features__image {
+        padding: 25px 192px;
+        width: 450px;
+    }
+
+    .features__title {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .features__item {
+        width: 354px;
+        margin-bottom: 30px;
+
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+
+    .features__image {
+        padding: 25px 144px;
+        width: 354px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__contacts-list {
+        margin-left: auto;
+    }
+
+    .features__item {
+        width: 270px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+    }
+}

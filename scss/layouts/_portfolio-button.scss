@@ -1,0 +1,64 @@
+@use "../utils/variables";
+.portfolio__button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio__button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio__work-button {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(26/16);
+    text-align: center;
+    color: variables.$main-text-color;
+    background: variables.$background-button-color;
+    padding: 6px 26px;
+    border: none;
+    border-radius: 4px;
+
+&:hover, &:focus {
+    background-color: variables.$accent-color;
+    color: variables.$white-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .portfolio__button-list {
+        justify-content: normal;
+        ;
+    }
+
+    .portfolio__work-button {
+        margin-bottom: 15px;
+    }
+
+
+    .portfolio__work-button:not(:nth-last-child(-n+2)) {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .portfolio__button-list {
+        justify-content: normal;
+        ;
+    }
+
+    .portfolio__work-button {
+        margin-bottom: 15px;
+    }
+
+
+    .portfolio__work-button:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+
+}

@@ -1,0 +1,52 @@
+@use "../utils/variables";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: variables.$accent-color;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: variables.$main-text-color;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

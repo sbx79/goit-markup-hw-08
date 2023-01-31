@@ -1,0 +1,46 @@
+@use "../utils/variables";
+.social-media {
+    display: flex;
+    justify-content: center;
+
+.social-media__icon {
+    fill: currentColor
+}
+
+.social-media__link {
+    width: 40px;
+    height: 40px;
+    background-color: variables.$white-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    border-radius: 50%;    
+
+&:hover, &:focus{
+    background-color: variables.$accent-color;
+    color: variables.$white-text-color;    
+}
+}
+
+.social-media__item:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+.footer-social-media__link {
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+
+    &:hover, &:focus {
+    background-color: variables.$accent-color;
+    color: white;
+    fill: currentColor;
+}
+}

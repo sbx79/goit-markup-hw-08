@@ -1,0 +1,10 @@
+@use "../utils/variables";
+header {
+    border-bottom: 1px solid var(--border-color)
+}
+
+.header__topline {
+
+    display: flex;
+    align-items: center;
+}
