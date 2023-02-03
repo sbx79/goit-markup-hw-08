@@ -971,7 +971,7 @@ body {
   margin-left: auto;
 }
 
-.header__contacts-item:not(:last-child) {
+.header__contacts-item:last-child {
   margin-right: 50px;
 }
 
