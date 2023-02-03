@@ -1,100 +1,84 @@
 @use "../utils/variables";
+
+.regular-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width:1200px) {
+    .regular-customers {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
 .regular-customers__title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;    
+    line-height: 42px;
     letter-spacing: 0.03em;
-    color: variables.$main-text-color;
-    margin-bottom: 50px;
-
+    color: #212121;   
+    padding-bottom: 30px;
 }
 
 .regular-customers__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
 }
 
 .regular-customers__item {
-    width: 170px;        
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .regular-customers__item {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    .regular-customers__title {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .regular-customers__item {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+
+    .regular-customers__title {
+        padding-bottom: 50px;
+    }
 }
 
 .regular-customers__link {
-    width: 170px;
     height: 92px;
-    padding: 16px 32px;
-    border: 1px solid variables.$border-color;
+    border: 1px solid #afb1b8;
     border-radius: 4px;
-    fill: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-&:hover, &:focus{
-    fill: variables.$accent-color;
-    border: 1px solid variables.$accent-color;
-    border-radius: 4px;
-}
-}
-
-@media (min-width: 320px) and (max-width: 479px) {
-    .regular-customers__item {
-        width: 127px;
-        margin-bottom: 30px;
-
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
+    &:hover,
+    &:focus {
+        border-color: variables.$logo-color;
     }
-
-    .regular-customers__link {
-        width: 127px;
-        padding: 15px 9px;
-    }
-
-    .regular-customers__list {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
-    .regular-customers__item {
-        width: 210px;
-        margin-bottom: 30px;
 
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
+.customer-logo {
+    fill: #afb1b8;
+    color: variables.$logo-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    }
-
-    .regular-customers__link {
-        width: 210px;
-        padding: 16px 52px;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .regular-customers__item {
-        width: 226px;
-        margin-bottom: 30px;
-
-        &:not(:nth-child(3n)) {
-            margin-right: 30px;
-        }
-
-    }
-
-    .regular-customers__link {
-        width: 226px;
-        padding: 16px 60px;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .regular-customers__item:not(:last-child) {
-        margin-right: 30px;
+    &:hover,
+    &:focus {
+        fill: currentColor;
     }
 }
